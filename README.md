@@ -13,7 +13,7 @@ La generación del gráfico se encuentra en el siguiente [archivo](./archive/ana
 
 ## 📈 Resultados
 
-A continuación se presenta el análisis comparativo de los tres algoritmos implementados para la multiplicación de matrices: el algoritmo tradicional, el método divide y vencerás, y el algoritmo de Strassen.
+A continuación se presenta el análisis comparativo de los tres algoritmos implementados para la multiplicación de matrices: el algoritmo tradicional, el método divide y conquista, y el algoritmo de Strassen.
 
 ![analysis.png](./archive/analysis.png)
 
