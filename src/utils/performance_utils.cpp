@@ -57,21 +57,14 @@ void print_results()
          << setw(25) << "DR1"
          << setw(25) << "DR2" << endl;
 
-    ofstream archivo("./resultados.txt");
+    ofstream archivo("./resultados.csv");
     if (!archivo.is_open())
     {
-        cerr << "Error al abrir el archivo para escritura." << endl;
+        cerr << "Error al abrir el archivo CSV para escritura." << endl;
         return;
     }
 
-    cout << string(80, '=') << endl;
-
-    archivo << string(80, '=') << endl;
-    archivo << left << setw(15) << "n"
-            << setw(25) << "Algoritmo Tradicional"
-            << setw(25) << "DR1"
-            << setw(25) << "DR2" << endl;
-    archivo << string(80, '=') << endl;
+    archivo << "n,Algoritmo Tradicional (ms),DR1 (ms),DR2 (ms)" << endl;
 
     for (size_t i = 0; i < MATRIX_SIZE.size(); ++i)
     {
@@ -86,10 +79,10 @@ void print_results()
              << setw(25) << ss_dr2.str()
              << endl;
 
-        archivo << left << setw(15) << MATRIX_SIZE[i]
-                << setw(25) << fixed << setprecision(2) << time_traditional[i]
-                << setw(25) << fixed << setprecision(2) << time_dr1[i]
-                << setw(25) << fixed << setprecision(2) << time_dr2[i]
+        archivo << MATRIX_SIZE[i] << ","
+                << fixed << setprecision(2) << time_traditional[i] << ","
+                << fixed << setprecision(2) << time_dr1[i] << ","
+                << fixed << setprecision(2) << time_dr2[i]
                 << endl;
     }
     cout << string(80, '=') << endl;
