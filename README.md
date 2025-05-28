@@ -3,11 +3,13 @@
 
 ## 📘 Tarea: Multiplicación de Matrices
 
-Este código implementa y analiza la **multiplicación de matrices** con algoritmo tradicional, divide y conquista y strassens's.
+Este código implementa y analiza la **multiplicación de matrices** con algoritmo tradicional, divide y conquista y Strassen.
 
 El enunciado completo del segundo problema está disponible en el siguiente [archivo](./docs/enunciado.pdf).
 
 Las respuestas correspondientes se encuentran en el siguiente [archivo](./docs/respuestas.pdf).
+
+La generación del gráfico se encuentra en el siguiente [archivo](./archive/analysis.ipynb).
 
 ## 📈 Resultados
 
