@@ -9,6 +9,14 @@ El enunciado completo del segundo problema está disponible en el siguiente [arc
 
 Las respuestas correspondientes se encuentran en el siguiente [archivo](./docs/respuestas.pdf).
 
+## 📈 Resultados
+
+A continuación se presenta el análisis comparativo de los tres algoritmos implementados para la multiplicación de matrices: el algoritmo tradicional, el método divide y vencerás, y el algoritmo de Strassen.
+
+![analysis.png](./archive/analysis.png)
+
+La gráfica muestra los tiempos de ejecución de cada algoritmo según el tamaño de las matrices, permitiendo observar las ventajas y desventajas de cada enfoque.
+
 ## ⚙️ Instrucciones de Compilación y Ejecución
 
 Asegúrate de tener `g++` instalado en tu sistema. Luego, sigue los siguientes pasos para compilar y ejecutar el código:
